@@ -1,0 +1,19 @@
+port: 6275
+dest: docs
+out: index.html
+source: slides.md
+title: 'RxJS Introduction'
+assets: ['assets']
+css: ''
+cssFiles: ['style.css']
+script: ''
+scriptFiles: []
+livereload: true
+livereloadPort: 35729
+remarkConfig:
+  highlightSpans: true
+  highlightStyle: 'ascetic'
+  navigation:
+    scroll: false
+  ratio: '16:9'
+  slideNumberFormat: ''

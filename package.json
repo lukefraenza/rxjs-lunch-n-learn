@@ -1,0 +1,15 @@
+{
+  "name": "rxjs_lunch_n_learn",
+  "version": "1.0.0",
+  "description": "Slideshow for my RxJS Lunch n Learn",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/remarker",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luke Fraenza",
+  "license": "ISC",
+  "dependencies": {
+    "remarker": "^1.10.0"
+  }
+}
