@@ -1,11 +1,11 @@
 port: 6275
 dest: docs
 out: index.html
-source: slides.md
+source: './slides/slides.md'
 title: 'RxJS Introduction'
 assets: ['assets']
 css: ''
-cssFiles: ['style.css']
+cssFiles: ['./slides/style.css']
 script: ''
 scriptFiles: []
 livereload: true
