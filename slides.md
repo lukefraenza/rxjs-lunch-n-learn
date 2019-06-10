@@ -5,7 +5,9 @@ class: center, middle, inverse
 
 ---
 
-# Basic types
+# RxJS introduction
+
+A (not so) equal and opposite reaction.
 
 ---
 layout: false
@@ -19,8 +21,14 @@ layout: false
 2. Uses in our codebase
 
 ---
+# Basic types
+---
 
+.left-column[
+# Basic types
 ## Observable
+]
+.right-column[
 - collection of future values or events
 - a _stream_ of data that can arrive over time
   - A stream is a sequence of ongoing events ordered in time.
@@ -28,42 +36,72 @@ layout: false
   - a value
   - an error
   - a completion
-
+]
 ---
-
+.left-column[
+# Basic types
+## Observable
 ## Subscription
+]
+.right-column[
 - thing that executes and listens to a (cold) Observable
 - thing that starts listening to a (hot) Observable
 - the execution of an Observable
 - useful for cancelling
+]
 
 ---
 
+.left-column[
+# Basic types
+## Observable
+## Subscription
 ## Observer
+]
+.right-column[
 - function you pass to a subscription that contains code that _reacts_ to values pushed from the Observable
 - callbacks that know how to listen to observables
+]
 
 ---
 
+.left-column[
+# Basic types
+## Observable
+## Subscription
+## Observer
 ## Operator
+]
+.right-column[
 - transform the values of the collections/events emitted by the Observable
 - "pure" functions
   - do not mutate data passed in
 - map, filter, concat, etc
 - provide a new observable, which can then be acted upon by another Operator or an Observer
+]
 
 ---
 
+.left-column[
+# Basic types
+## Observable
+## Subscription
+## Observer
+## Operator
 ## Subject
+]
+.right-column[
 - a (hot) Observable _and_ an Observer
   - you can subscribe to it _and_ you can push values into it that will make their way to subscribers
   - you can "prime" it with a starting value
 - like an `EventEmitter`
 - the only way of multicasting a value or event to multiple Observers.
+]
 
 ---
-
+layout: inverse
 ## Why pure functions?
+???
 - They're predictable; they don't do anything _sneaky_
 - Doesn’t mutate anything
 - Always returns the same value based on the same parameters
@@ -116,6 +154,7 @@ aValue = oneValueProducer('baz');
 ---
 
 ## Multiple Value Producer
+
 ```TypeScript
 let multipleValueProducer = ['foo', 'bar', 'baz'];
 

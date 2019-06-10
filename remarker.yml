@@ -12,7 +12,8 @@ livereload: true
 livereloadPort: 35729
 remarkConfig:
   highlightSpans: true
-  highlightStyle: 'ascetic'
+  highlightStyle: 'monokai'
+  highlightLines: true
   navigation:
     scroll: false
   ratio: '16:9'
