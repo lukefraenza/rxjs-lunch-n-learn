@@ -27,13 +27,19 @@ First, we'll talk a little bit about what RxJS is, and Reactive Programming in g
 Next, we'll go over the main, basic types in RxJS.  You know, the things we're going to work with.
 
 --
-3. In our codebase
+3. Pull vs. Push
+
+???
+Then, we'll talk about the concepts of pull vs push when it comes to collections and data
+
+--
+4. In our codebase
 
 ???
 After that, I'll show you the two most common ways RxJS is currently used in our codebase
 
 --
-4. Exercises
+5. Exercises
 
 ???
 We'll follow that up by playing with some reactive code
@@ -210,26 +216,57 @@ template: inverse
 ]
 
 ---
-layout: inverse
-## Why pure functions?
+template: inverse
+# Why pure functions?
+
+---
+# Why pure functions?
+* predictable
+
 ???
 - They're predictable; they don't do anything _sneaky_
-- Doesn’t mutate anything
+
+--
+* no mutations
+
+???
+- Doesn’t mutate anything - anything you pass to it will remain unscathed
+
+--
+* confidence in return values
+
+???
 - Always returns the same value based on the same parameters
   - Isn't affected by outside state that may change
+
+--
+* no side effects
+
+???
 - No side effects. It can’t mutate state outside of the function
 
 ---
-
+template: inverse
 # Pull vs. Push
+
+???
+So now we'll talk about the concepts of Pull and Push
 
 ---
 
 ## Producer/Consumer
 
-**Producer**: thing that gives you data
+  .pull-left[![producer](assets/keebler.jpg)Producer]
+  .pull-right[![consumer](assets/cookie_monster.jpg)Consumer]
 
-**Consumer**: thing that needs the data
+???
+
+When writing (useful) code, you often need to work with data given to you from some source,
+or provide data to an outside source.
+
+A Producer is a thing that gives you data.
+
+A Consumer is what takes the data and does something with it.
 
 ---
 # Pull
