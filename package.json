@@ -4,12 +4,20 @@
   "description": "Slideshow for my RxJS Lunch n Learn",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/remarker",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --mode development",
+    "slides": "./node_modules/.bin/remarker"
   },
   "author": "Luke Fraenza",
   "license": "ISC",
   "dependencies": {
-    "remarker": "^1.10.0"
+    "remarker": "^1.10.0",
+    "rxjs": "^6.5.2",
+    "ts-loader": "^6.0.2",
+    "typescript": "^3.5.1",
+    "webpack": "^4.33.0",
+    "webpack-dev-server": "^3.7.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.3"
   }
 }
