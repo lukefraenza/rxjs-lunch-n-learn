@@ -12,12 +12,12 @@
   "dependencies": {
     "remarker": "^1.10.0",
     "rxjs": "^6.5.2",
-    "ts-loader": "^6.0.2",
+    "ts-loader": "^9.4.2",
     "typescript": "^3.5.1",
-    "webpack": "^4.33.0",
+    "webpack": "^5.75.0",
     "webpack-dev-server": "^3.7.1"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.3"
+    "webpack-cli": "^5.0.1"
   }
 }
